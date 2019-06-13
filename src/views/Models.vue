@@ -144,6 +144,12 @@ export default {
     this.initialize_mx(1);
     //clear undo redo history
     this.undoManager.clear();
+
+    if (localStorage["cache_selected" + temp])
+      this.$store.dispatch(
+        "updatecacheselected",
+        JSON.parse(localStorage["cache_selected" + temp])
+      );
   },
   methods: {
     persist() {

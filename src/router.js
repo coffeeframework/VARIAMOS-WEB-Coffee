@@ -18,9 +18,9 @@ export default new Router({
       component: () => import('./views/About.vue')
     },
     {
-      path: '/models/:type',
+      path: '/models/:project/:folder/:type',
       name: 'Models',
-      component: () => import('./views/Models.vue')
+      component: () => import('./views/Multi-models.vue')
     },
     {
       path: '/reports',
@@ -38,9 +38,9 @@ export default new Router({
       component: () => import('./views/FragOP.vue')
     },
     {
-      path: '/hlvl',
-      name: 'HLVL',
-      component: () => import('./views/HLVL.vue')
+      path: '/coffee',
+      name: 'Coffee',
+      component: () => import('./views/Coffee.vue')
     }
   ]
 })
