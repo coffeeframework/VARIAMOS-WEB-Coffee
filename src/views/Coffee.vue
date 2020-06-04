@@ -353,6 +353,7 @@ export default {
       } else if (
         firstLine.includes("feature_model") &&
         secondLine.includes("meta")
+        || secondLine.includes("feature_model")
       ) {
         path = "splot2Hlvl/";
       }
